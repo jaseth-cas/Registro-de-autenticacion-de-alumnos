@@ -18,185 +18,106 @@ namespace WindowsFormsApp2
 
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lstAlumnos = new System.Windows.Forms.ListBox();
-            this.chkNotificaciones = new System.Windows.Forms.CheckBox();
-            this.chkTerminos = new System.Windows.Forms.CheckBox();
-            this.rbVespertina = new System.Windows.Forms.RadioButton();
-            this.rbMatutina = new System.Windows.Forms.RadioButton();
-            this.cmbSemestre = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmbCarrera = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.Lblusu = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.Lblcontr = new System.Windows.Forms.Label();
+            this.GpBxCrede = new System.Windows.Forms.GroupBox();
+            this.Lblconf = new System.Windows.Forms.Label();
             this.txtConfirmar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-
             this.label5 = new System.Windows.Forms.Label();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acerdaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
+            this.Lblnomb = new System.Windows.Forms.Label();
+            this.Lblced = new System.Windows.Forms.Label();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.Lblcarre = new System.Windows.Forms.Label();
+            this.cmbCarrera = new System.Windows.Forms.ComboBox();
+            this.Lblsemes = new System.Windows.Forms.Label();
+            this.cmbSemestre = new System.Windows.Forms.ComboBox();
+            this.rbMatutina = new System.Windows.Forms.RadioButton();
+            this.rbVespertina = new System.Windows.Forms.RadioButton();
+            this.chkTerminos = new System.Windows.Forms.CheckBox();
+            this.chkNotificaciones = new System.Windows.Forms.CheckBox();
+            this.GpbxAlum = new System.Windows.Forms.GroupBox();
+            this.lstAlumnos = new System.Windows.Forms.ListBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btnnuv = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnguar = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnslr = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnacercade = new System.Windows.Forms.ToolStripMenuItem();
+            this.Mnuopcion = new System.Windows.Forms.MenuStrip();
+            this.GpBxalumnos = new System.Windows.Forms.GroupBox();
+            this.GpBxCrede.SuspendLayout();
+            this.GpbxAlum.SuspendLayout();
+            this.Mnuopcion.SuspendLayout();
+            this.GpBxalumnos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // txtContraseña
             // 
-            this.groupBox1.Controls.Add(this.lstAlumnos);
-            this.groupBox1.Controls.Add(this.chkNotificaciones);
-            this.groupBox1.Controls.Add(this.chkTerminos);
-            this.groupBox1.Controls.Add(this.rbVespertina);
-            this.groupBox1.Controls.Add(this.rbMatutina);
-            this.groupBox1.Controls.Add(this.cmbSemestre);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.cmbCarrera);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtCedula);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(25, 100);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(300, 260);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del Alumno";
+            this.txtContraseña.Location = new System.Drawing.Point(100, 70);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(100, 22);
+            this.txtContraseña.TabIndex = 2;
             // 
-            // lstAlumnos
+            // Lblusu
             // 
-            this.lstAlumnos.Location = new System.Drawing.Point(210, 20);
-            this.lstAlumnos.Name = "lstAlumnos";
-            this.lstAlumnos.Size = new System.Drawing.Size(80, 147);
-            this.lstAlumnos.TabIndex = 0;
+            this.Lblusu.AutoSize = true;
+            this.Lblusu.Location = new System.Drawing.Point(27, 35);
+            this.Lblusu.Name = "Lblusu";
+            this.Lblusu.Size = new System.Drawing.Size(54, 16);
+            this.Lblusu.TabIndex = 6;
+            this.Lblusu.Text = "Usuario";
             // 
-            // chkNotificaciones
+            // txtUsuario
             // 
-            this.chkNotificaciones.Location = new System.Drawing.Point(150, 225);
-            this.chkNotificaciones.Name = "chkNotificaciones";
-            this.chkNotificaciones.Size = new System.Drawing.Size(104, 24);
-            this.chkNotificaciones.TabIndex = 1;
-            this.chkNotificaciones.Text = "Notificaciones";
+            this.txtUsuario.Location = new System.Drawing.Point(100, 30);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 22);
+            this.txtUsuario.TabIndex = 4;
             // 
-            // chkTerminos
+            // Lblcontr
             // 
-            this.chkTerminos.Location = new System.Drawing.Point(10, 225);
-            this.chkTerminos.Name = "chkTerminos";
-            this.chkTerminos.Size = new System.Drawing.Size(104, 24);
-            this.chkTerminos.TabIndex = 2;
-            this.chkTerminos.Text = "Acepto términos";
+            this.Lblcontr.AutoSize = true;
+            this.Lblcontr.Location = new System.Drawing.Point(21, 76);
+            this.Lblcontr.Name = "Lblcontr";
+            this.Lblcontr.Size = new System.Drawing.Size(76, 16);
+            this.Lblcontr.TabIndex = 7;
+            this.Lblcontr.Text = "Contraseña";
             // 
-            // rbVespertina
+            // GpBxCrede
             // 
-            this.rbVespertina.Location = new System.Drawing.Point(10, 180);
-            this.rbVespertina.Name = "rbVespertina";
-            this.rbVespertina.Size = new System.Drawing.Size(104, 24);
-            this.rbVespertina.TabIndex = 3;
-            this.rbVespertina.Text = "Vespertina";
+            this.GpBxCrede.Controls.Add(this.Lblconf);
+            this.GpBxCrede.Controls.Add(this.Lblcontr);
+            this.GpBxCrede.Controls.Add(this.Lblusu);
+            this.GpBxCrede.Controls.Add(this.txtConfirmar);
+            this.GpBxCrede.Controls.Add(this.label7);
+            this.GpBxCrede.Controls.Add(this.txtContraseña);
+            this.GpBxCrede.Controls.Add(this.label6);
+            this.GpBxCrede.Controls.Add(this.txtUsuario);
+            this.GpBxCrede.Controls.Add(this.label5);
+            this.GpBxCrede.Location = new System.Drawing.Point(112, 352);
+            this.GpBxCrede.Name = "GpBxCrede";
+            this.GpBxCrede.Size = new System.Drawing.Size(300, 200);
+            this.GpBxCrede.TabIndex = 1;
+            this.GpBxCrede.TabStop = false;
+            this.GpBxCrede.Text = "Credenciales";
             // 
-            // rbMatutina
+            // Lblconf
             // 
-            this.rbMatutina.Location = new System.Drawing.Point(120, 180);
-            this.rbMatutina.Name = "rbMatutina";
-            this.rbMatutina.Size = new System.Drawing.Size(104, 24);
-            this.rbMatutina.TabIndex = 4;
-            this.rbMatutina.Text = "Matutina";
-            // 
-            // cmbSemestre
-            // 
-            this.cmbSemestre.Location = new System.Drawing.Point(80, 140);
-            this.cmbSemestre.Name = "cmbSemestre";
-            this.cmbSemestre.Size = new System.Drawing.Size(121, 21);
-            this.cmbSemestre.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(10, 140);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Semestre:";
-            // 
-            // cmbCarrera
-            // 
-            this.cmbCarrera.Location = new System.Drawing.Point(80, 100);
-            this.cmbCarrera.Name = "cmbCarrera";
-            this.cmbCarrera.Size = new System.Drawing.Size(121, 21);
-            this.cmbCarrera.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(10, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Carrera:";
-            // 
-            // txtCedula
-            // 
-            this.txtCedula.Location = new System.Drawing.Point(80, 60);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(100, 20);
-            this.txtCedula.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(10, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Cédula:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(80, 20);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(10, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Nombre:";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.txtConfirmar);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.txtContraseña);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.txtUsuario);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(350, 40);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(300, 200);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Credenciales";
+            this.Lblconf.AutoSize = true;
+            this.Lblconf.Location = new System.Drawing.Point(27, 117);
+            this.Lblconf.Name = "Lblconf";
+            this.Lblconf.Size = new System.Drawing.Size(64, 16);
+            this.Lblconf.TabIndex = 8;
+            this.Lblconf.Text = "Confirmar";
             // 
             // txtConfirmar
             // 
             this.txtConfirmar.Location = new System.Drawing.Point(100, 110);
             this.txtConfirmar.Name = "txtConfirmar";
-            this.txtConfirmar.Size = new System.Drawing.Size(100, 20);
+            this.txtConfirmar.Size = new System.Drawing.Size(100, 22);
             this.txtConfirmar.TabIndex = 0;
             this.txtConfirmar.TextChanged += new System.EventHandler(this.txtConfirmar_TextChanged);
             // 
@@ -208,13 +129,6 @@ namespace WindowsFormsApp2
             this.label7.TabIndex = 1;
             this.label7.Text = "Confirmar:";
             // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Location = new System.Drawing.Point(100, 70);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtContraseña.TabIndex = 2;
-            // 
             // label6
             // 
             this.label6.Location = new System.Drawing.Point(0, 0);
@@ -222,13 +136,6 @@ namespace WindowsFormsApp2
             this.label6.Size = new System.Drawing.Size(100, 23);
             this.label6.TabIndex = 3;
             this.label6.Text = "Contraseña:";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(100, 30);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 4;
             // 
             // label5
             // 
@@ -238,122 +145,234 @@ namespace WindowsFormsApp2
             this.label5.TabIndex = 5;
             this.label5.Text = "Usuario:";
             // 
-            // menuStrip2
+            // Lblnomb
             // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoToolStripMenuItem,
-            this.guardarToolStripMenuItem,
-            this.salirToolStripMenuItem,
-            this.acerdaDeToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip2.TabIndex = 2;
+            this.Lblnomb.Location = new System.Drawing.Point(10, 20);
+            this.Lblnomb.Name = "Lblnomb";
+            this.Lblnomb.Size = new System.Drawing.Size(100, 23);
+            this.Lblnomb.TabIndex = 12;
+            this.Lblnomb.Text = "Nombre:";
             // 
-            // nuevoToolStripMenuItem
+            // Lblced
             // 
-            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.Lblced.Location = new System.Drawing.Point(10, 60);
+            this.Lblced.Name = "Lblced";
+            this.Lblced.Size = new System.Drawing.Size(100, 23);
+            this.Lblced.TabIndex = 10;
+            this.Lblced.Text = "Cédula:";
             // 
-            // guardarToolStripMenuItem
+            // txtCedula
             // 
-            this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.guardarToolStripMenuItem.Text = "Guardar";
+            this.txtCedula.Location = new System.Drawing.Point(80, 60);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(144, 22);
+            this.txtCedula.TabIndex = 9;
             // 
-            // salirToolStripMenuItem
+            // Lblcarre
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.Lblcarre.Location = new System.Drawing.Point(10, 100);
+            this.Lblcarre.Name = "Lblcarre";
+            this.Lblcarre.Size = new System.Drawing.Size(100, 23);
+            this.Lblcarre.TabIndex = 8;
+            this.Lblcarre.Text = "Carrera:";
             // 
-            // acerdaDeToolStripMenuItem
+            // cmbCarrera
             // 
-            this.acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
-            this.acerdaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.acerdaDeToolStripMenuItem.Text = "Acerca de";
+            this.cmbCarrera.Location = new System.Drawing.Point(80, 100);
+            this.cmbCarrera.Name = "cmbCarrera";
+            this.cmbCarrera.Size = new System.Drawing.Size(144, 24);
+            this.cmbCarrera.TabIndex = 7;
             // 
-            // label8
+            // Lblsemes
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 35);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Usuario";
+            this.Lblsemes.Location = new System.Drawing.Point(10, 140);
+            this.Lblsemes.Name = "Lblsemes";
+            this.Lblsemes.Size = new System.Drawing.Size(100, 23);
+            this.Lblsemes.TabIndex = 6;
+            this.Lblsemes.Text = "Semestre:";
             // 
-            // label9
+            // cmbSemestre
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 76);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Contrase";
+            this.cmbSemestre.Enabled = false;
+            this.cmbSemestre.Location = new System.Drawing.Point(80, 140);
+            this.cmbSemestre.Name = "cmbSemestre";
+            this.cmbSemestre.Size = new System.Drawing.Size(144, 24);
+            this.cmbSemestre.TabIndex = 5;
             // 
-            // label10
+            // rbMatutina
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 117);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Confirmar";
+            this.rbMatutina.Location = new System.Drawing.Point(120, 180);
+            this.rbMatutina.Name = "rbMatutina";
+            this.rbMatutina.Size = new System.Drawing.Size(104, 24);
+            this.rbMatutina.TabIndex = 4;
+            this.rbMatutina.Text = "Matutina";
+            // 
+            // rbVespertina
+            // 
+            this.rbVespertina.Location = new System.Drawing.Point(10, 180);
+            this.rbVespertina.Name = "rbVespertina";
+            this.rbVespertina.Size = new System.Drawing.Size(104, 24);
+            this.rbVespertina.TabIndex = 3;
+            this.rbVespertina.Text = "Vespertina";
+            // 
+            // chkTerminos
+            // 
+            this.chkTerminos.Location = new System.Drawing.Point(10, 225);
+            this.chkTerminos.Name = "chkTerminos";
+            this.chkTerminos.Size = new System.Drawing.Size(104, 24);
+            this.chkTerminos.TabIndex = 2;
+            this.chkTerminos.Text = "Acepto términos";
+            // 
+            // chkNotificaciones
+            // 
+            this.chkNotificaciones.Location = new System.Drawing.Point(150, 225);
+            this.chkNotificaciones.Name = "chkNotificaciones";
+            this.chkNotificaciones.Size = new System.Drawing.Size(104, 24);
+            this.chkNotificaciones.TabIndex = 1;
+            this.chkNotificaciones.Text = "Notificaciones";
+            // 
+            // GpbxAlum
+            // 
+            this.GpbxAlum.Controls.Add(this.chkNotificaciones);
+            this.GpbxAlum.Controls.Add(this.chkTerminos);
+            this.GpbxAlum.Controls.Add(this.rbVespertina);
+            this.GpbxAlum.Controls.Add(this.rbMatutina);
+            this.GpbxAlum.Controls.Add(this.cmbSemestre);
+            this.GpbxAlum.Controls.Add(this.Lblsemes);
+            this.GpbxAlum.Controls.Add(this.cmbCarrera);
+            this.GpbxAlum.Controls.Add(this.Lblcarre);
+            this.GpbxAlum.Controls.Add(this.txtCedula);
+            this.GpbxAlum.Controls.Add(this.Lblced);
+            this.GpbxAlum.Controls.Add(this.txtNombre);
+            this.GpbxAlum.Controls.Add(this.Lblnomb);
+            this.GpbxAlum.Location = new System.Drawing.Point(112, 60);
+            this.GpbxAlum.Name = "GpbxAlum";
+            this.GpbxAlum.Size = new System.Drawing.Size(300, 260);
+            this.GpbxAlum.TabIndex = 0;
+            this.GpbxAlum.TabStop = false;
+            this.GpbxAlum.Text = "Datos del Alumno";
+            // 
+            // lstAlumnos
+            // 
+            this.lstAlumnos.ItemHeight = 16;
+            this.lstAlumnos.Location = new System.Drawing.Point(10, 30);
+            this.lstAlumnos.Name = "lstAlumnos";
+            this.lstAlumnos.Size = new System.Drawing.Size(342, 180);
+            this.lstAlumnos.TabIndex = 0;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(80, 20);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(144, 22);
+            this.txtNombre.TabIndex = 11;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged_1);
+            // 
+            // btnnuv
+            // 
+            this.btnnuv.Name = "btnnuv";
+            this.btnnuv.Size = new System.Drawing.Size(66, 24);
+            this.btnnuv.Text = "Nuevo";
+            this.btnnuv.Click += new System.EventHandler(this.btnnuv_Click);
+            // 
+            // btnguar
+            // 
+            this.btnguar.Name = "btnguar";
+            this.btnguar.Size = new System.Drawing.Size(76, 24);
+            this.btnguar.Text = "Guardar";
+            this.btnguar.Click += new System.EventHandler(this.btnguar_Click);
+            // 
+            // btnslr
+            // 
+            this.btnslr.Name = "btnslr";
+            this.btnslr.Size = new System.Drawing.Size(52, 24);
+            this.btnslr.Text = "Salir";
+            this.btnslr.Click += new System.EventHandler(this.btnslr_Click);
+            // 
+            // btnacercade
+            // 
+            this.btnacercade.Name = "btnacercade";
+            this.btnacercade.Size = new System.Drawing.Size(89, 24);
+            this.btnacercade.Text = "Acerca de";
+            this.btnacercade.Click += new System.EventHandler(this.acerdaDeToolStripMenuItem_Click);
+            // 
+            // Mnuopcion
+            // 
+            this.Mnuopcion.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.Mnuopcion.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnnuv,
+            this.btnguar,
+            this.btnslr,
+            this.btnacercade});
+            this.Mnuopcion.Location = new System.Drawing.Point(0, 0);
+            this.Mnuopcion.Name = "Mnuopcion";
+            this.Mnuopcion.Size = new System.Drawing.Size(601, 28);
+            this.Mnuopcion.TabIndex = 2;
+            // 
+            // GpBxalumnos
+            // 
+            this.GpBxalumnos.Controls.Add(this.lstAlumnos);
+            this.GpBxalumnos.Location = new System.Drawing.Point(112, 594);
+            this.GpBxalumnos.Name = "GpBxalumnos";
+            this.GpBxalumnos.Size = new System.Drawing.Size(358, 216);
+            this.GpBxalumnos.TabIndex = 3;
+            this.GpBxalumnos.TabStop = false;
+            this.GpBxalumnos.Text = "Lista de Alumnos";
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.menuStrip2);
-            this.MainMenuStrip = this.menuStrip2;
+            this.ClientSize = new System.Drawing.Size(601, 846);
+            this.Controls.Add(this.GpBxalumnos);
+            this.Controls.Add(this.GpbxAlum);
+            this.Controls.Add(this.GpBxCrede);
+            this.Controls.Add(this.Mnuopcion);
+            this.MainMenuStrip = this.Mnuopcion;
             this.Name = "Form1";
             this.Text = "Registro de Alumnos";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.GpBxCrede.ResumeLayout(false);
+            this.GpBxCrede.PerformLayout();
+            this.GpbxAlum.ResumeLayout(false);
+            this.GpbxAlum.PerformLayout();
+            this.Mnuopcion.ResumeLayout(false);
+            this.Mnuopcion.PerformLayout();
+            this.GpBxalumnos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox lstAlumnos;
-        private System.Windows.Forms.CheckBox chkNotificaciones;
-        private System.Windows.Forms.CheckBox chkTerminos;
-        private System.Windows.Forms.RadioButton rbVespertina;
-        private System.Windows.Forms.RadioButton rbMatutina;
-        private System.Windows.Forms.ComboBox cmbSemestre;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbCarrera;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txtConfirmar;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtUsuario;
-
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem guardarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acerdaDeToolStripMenuItem;
-        private Label label10;
-        private Label label9;
-        private Label label8;
+        private TextBox txtContraseña;
+        private Label Lblusu;
+        private TextBox txtUsuario;
+        private Label Lblcontr;
+        private GroupBox GpBxCrede;
+        private Label Lblconf;
+        private Label label6;
+        private Label label5;
+        private Label label7;
+        private TextBox txtConfirmar;
+        private Label Lblnomb;
+        private Label Lblced;
+        private TextBox txtCedula;
+        private Label Lblcarre;
+        private ComboBox cmbCarrera;
+        private Label Lblsemes;
+        private ComboBox cmbSemestre;
+        private RadioButton rbMatutina;
+        private RadioButton rbVespertina;
+        private CheckBox chkTerminos;
+        private CheckBox chkNotificaciones;
+        private GroupBox GpbxAlum;
+        private ListBox lstAlumnos;
+        private TextBox txtNombre;
+        private ToolStripMenuItem btnnuv;
+        private ToolStripMenuItem btnguar;
+        private ToolStripMenuItem btnslr;
+        private ToolStripMenuItem btnacercade;
+        private MenuStrip Mnuopcion;
+        private GroupBox GpBxalumnos;
     }
 }
 

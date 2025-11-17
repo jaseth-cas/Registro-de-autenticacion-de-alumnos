@@ -22,30 +22,37 @@ namespace WindowsFormsApp2
             txtCedula.Validating += txtCedula_Validating;
 
             // Menú
-            nuevoToolStripMenuItem.Click += nuevoToolStripMenuItem_Click;
-            guardarToolStripMenuItem.Click += guardarToolStripMenuItem_Click;
-            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
-            acerdaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
+            btnnuv.Click += nuevoToolStripMenuItem_Click;
+            btnguar.Click += guardarToolStripMenuItem_Click;
+            btnslr.Click += salirToolStripMenuItem_Click;
+            btnacercade.Click += acercaDeToolStripMenuItem_Click;
+            lstAlumnos.HorizontalScrollbar = true;
+            lstAlumnos.ScrollAlwaysVisible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Inicio de sesión
-            string codigo = Interaction.InputBox("Ingrese el código del administrador/profesor:", "Inicio de sesión", "");
-            if (codigo != "1234")
-            {
-                MessageBox.Show("Código incorrecto. El programa se cerrará.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Close();
-                return;
-            }
-
             // Llenar combos
-            cmbCarrera.Items.AddRange(new string[] { "Ingeniería", "Medicina", "Derecho" });
-            cmbSemestre.Items.AddRange(new string[] { "1er Semestre", "2do Semestre", "3er Semestre" });
+            cmbCarrera.Items.AddRange(new string[] {
+                "Ingeniería",
+                "Medicina",
+                "Derecho"
+            });
 
+                    cmbSemestre.Items.AddRange(new string[] {
+                "1er Semestre",
+                "2do Semestre",
+                "3er Semestre",
+                "4to Semestre"
+            });
+
+            // Contraseña
             txtContraseña.PasswordChar = '*';
             txtContraseña.MaxLength = 12;
+            txtConfirmar.PasswordChar = '*';
             txtUsuario.ReadOnly = true;
+
+            txtNombre.Focus();
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -137,7 +144,7 @@ namespace WindowsFormsApp2
             string jornada = rbMatutina.Checked ? "Matutina" :
                              rbVespertina.Checked ? "Vespertina" : "No seleccionada";
 
-            string alumno = $"Nombre: {txtNombre.Text}, Cédula: {txtCedula.Text}, Usuario: {txtUsuario.Text}, " +
+            string alumno = $"{txtNombre.Text} | {txtCedula.Text} | {cmbCarrera.Text} | {cmbSemestre.Text} | {txtUsuario.Text}"+
                             $"Carrera: {cmbCarrera.Text}, Semestre: {cmbSemestre.Text}, Jornada: {jornada}, " +
                             $"Notificaciones: {(chkNotificaciones.Checked ? "Sí" : "No")}";
 
@@ -161,6 +168,7 @@ namespace WindowsFormsApp2
             chkTerminos.Checked = false;
             chkNotificaciones.Checked = false;
             txtNombre.Focus();
+
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -188,28 +196,47 @@ namespace WindowsFormsApp2
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea salir?", "Salir", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                Close();
+
         }
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Autor: Alexandra De Gracia\nVersión: 1.0", "Acerca de");
+            MessageBox.Show("Autor: Alexandra De Gracia y Jaseth Castillo\nVersión: 1.0", "Acerca de");
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtConfirmar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnnuv_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnguar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnslr_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
